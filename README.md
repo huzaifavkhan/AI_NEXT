@@ -1,4 +1,4 @@
-# **AI NEXT – Embrace the Future of AI** (ai-next.co)
+# **AI NEXT – Embrace the Future of AI** ([ai-next.co](https://ai-next.co/))
 
 AI NEXT is an intelligent AI solutions platform designed to help businesses integrate and scale artificial intelligence across their operations. From automation and data analytics to decision support and digital transformation, AI NEXT equips organizations with tools that improve efficiency, reduce costs, and drive innovation.
 
