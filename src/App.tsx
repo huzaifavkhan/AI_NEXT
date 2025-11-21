@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import About from "./pages/About"
 import Contact from "./pages/Contact";
 import Prototype from "./pages/Prototype";
+import MashreqOutbound from "./pages/MashreqOutbound";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/prototype" element={<Prototype />} />
+          <Route path="/mashreq/outbound" element={<MashreqOutbound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
