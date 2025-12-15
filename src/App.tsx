@@ -13,6 +13,7 @@ import MashreqOutbound from "./pages/MashreqOutbound";
 import TakeoffOutbound from "./pages/TakeoffOutbound";
 import TakeoffInbound from "./pages/TakeoffInbound";
 import TakeoffAvatar from "./pages/TakeoffAvatar";
+import JSDebtCollection from "./pages/JSDebtCollection";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/takeoff/outbound" element={<TakeoffOutbound />} />
           <Route path="/takeoff/inbound" element={<TakeoffInbound />} />
           <Route path="/takeoff/avatar" element={<TakeoffAvatar />} />
+          <Route path="/js-debt-collection-calls" element={<JSDebtCollection />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
