@@ -7,7 +7,7 @@ const MashreqOutbound: React.FC = () => {
         src="https://js-outbound-debt-collection--razaiqbal2.replit.app"
         className="w-full h-full border-0"
         title="JS Outbound Debt Collection"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="microphone; camera; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
     </div>
