@@ -650,8 +650,8 @@ const Contact = () => {
                       <h3 className="text-lg font-semibold text-white mb-1">
                         Address
                       </h3>
-                      <p className="text-gray-300 font-medium">Mezzanine floor II, Faiyaz Center, Shahra-e-Faisal, Block 3-A Sindhi Muslim CHS (SMCHS) </p>
-                      <p className="text-gray-300 font-medium">Karachi, 75400, Pakistan</p>
+                      <p className="text-gray-300 font-medium">Mezzanine floor II, Faiyaz Center, Shahra-e-Faisal, Block 3-A Sindhi Muslim CHS (SMCHS), Karachi, 75400, Pakistan</p>
+                      <p className="text-gray-300 font-medium">Nişantepe Mah., Orman Sk. No:13, 34794 Çekmeköy/İstanbul, Türkiye</p>
                     </div>
                   </motion.div>
 
