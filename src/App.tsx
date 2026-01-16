@@ -15,6 +15,7 @@ import TakeoffInbound from "./pages/TakeoffInbound";
 import TakeoffAvatar from "./pages/TakeoffAvatar";
 import JSDebtCollection from "./pages/JSDebtCollection";
 import TrendyolCalls from "./pages/TrendyolCalls";
+import Dashboard from "./pages/Dashboard"
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/takeoff/avatar" element={<TakeoffAvatar />} />
           <Route path="/js-debt-collection-calls" element={<JSDebtCollection />} />
           <Route path="/trendyol/calls" element={<TrendyolCalls />} />
+          <Route path="/kepler/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
