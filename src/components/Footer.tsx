@@ -102,6 +102,16 @@ const Footer = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                   </div>
+                  <div className="flex flex-col items-center group cursor-pointer">
+                    <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                      <img 
+                        src="https://flagcdn.com/w80/us.png" 
+                        alt="USA" 
+                        className="w-12 h-8 object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
