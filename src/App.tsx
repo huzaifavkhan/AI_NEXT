@@ -16,6 +16,7 @@ import TakeoffAvatar from "./pages/TakeoffAvatar";
 import JSDebtCollection from "./pages/JSDebtCollection";
 import TrendyolCalls from "./pages/TrendyolCalls";
 import Dashboard from "./pages/Dashboard"
+import FibaBank from "./pages/FibaBank";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/js-debt-collection-calls" element={<JSDebtCollection />} />
           <Route path="/trendyol/calls" element={<TrendyolCalls />} />
           <Route path="/kepler/dashboard" element={<Dashboard />} />
+          <Route path="/fibabanka/hr-screening" element={<FibaBank />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
