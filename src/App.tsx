@@ -17,6 +17,7 @@ import JSDebtCollection from "./pages/JSDebtCollection";
 import TrendyolCalls from "./pages/TrendyolCalls";
 import Dashboard from "./pages/Dashboard"
 import FibaBank from "./pages/FibaBank";
+import DIB from "./pages/DIB";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/trendyol/calls" element={<TrendyolCalls />} />
           <Route path="/kepler/dashboard" element={<Dashboard />} />
           <Route path="/fibabanka/hr-screening" element={<FibaBank />} />
+          <Route path="/dib/inbound" element={<DIB />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
