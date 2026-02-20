@@ -85,7 +85,7 @@ const Navbar = () => {
           aria-label="AI Next"
         >
           <img 
-            src="/uploads/logonav.png" 
+            src="/uploads/logo1.png" 
             alt="AI Next Logo" 
             className="h-10 sm:h-12" 
           />
