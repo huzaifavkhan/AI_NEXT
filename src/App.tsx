@@ -18,6 +18,7 @@ import TrendyolCalls from "./pages/TrendyolCalls";
 import Dashboard from "./pages/Dashboard"
 import FibaBank from "./pages/FibaBank";
 import DIB from "./pages/DIB";
+import AlfalahInbound from "./pages/Alfalah";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/kepler/dashboard" element={<Dashboard />} />
           <Route path="/fibabanka/hr-screening" element={<FibaBank />} />
           <Route path="/dib/inbound" element={<DIB />} />
+          <Route path="/alfalah/inbound" element={<AlfalahInbound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
