@@ -1,5 +1,39 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://flagcdn.com; media-src 'self' blob:; connect-src 'self' https://api.emailjs.com; frame-src https://alfalah-inbound.replit.app https://dib-inbound-calls.replit.app https://fibabanka-hr-screening.replit.app https://js-outbound-debt-collection--razaiqbal2.replit.app https://kepler-inbound-dashboard.replit.app https://mashreq-uae-outbound-portal-razaiqbal2.replit.app https://takeoff-inbound-caller.replit.app https://takeoff-live-avatar.replit.app https://takeoff-outbound-caller--razaiqbal2.replit.app https://trendyol-customer-support-calls.replit.app https://ubl-inbound-call.replit.app; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "microphone=(self \"https://alfalah-inbound.replit.app\" \"https://dib-inbound-calls.replit.app\" \"https://fibabanka-hr-screening.replit.app\" \"https://js-outbound-debt-collection--razaiqbal2.replit.app\" \"https://kepler-inbound-dashboard.replit.app\" \"https://mashreq-uae-outbound-portal-razaiqbal2.replit.app\" \"https://takeoff-inbound-caller.replit.app\" \"https://takeoff-live-avatar.replit.app\" \"https://takeoff-outbound-caller--razaiqbal2.replit.app\" \"https://trendyol-customer-support-calls.replit.app\" \"https://ubl-inbound-call.replit.app\"), camera=(self \"https://alfalah-inbound.replit.app\" \"https://dib-inbound-calls.replit.app\" \"https://fibabanka-hr-screening.replit.app\" \"https://js-outbound-debt-collection--razaiqbal2.replit.app\" \"https://kepler-inbound-dashboard.replit.app\" \"https://mashreq-uae-outbound-portal-razaiqbal2.replit.app\" \"https://takeoff-inbound-caller.replit.app\" \"https://takeoff-live-avatar.replit.app\" \"https://takeoff-outbound-caller--razaiqbal2.replit.app\" \"https://trendyol-customer-support-calls.replit.app\" \"https://ubl-inbound-call.replit.app\"), geolocation=(), payment=(), usb=()"
+        }
+      ]
+    }
   ]
 }

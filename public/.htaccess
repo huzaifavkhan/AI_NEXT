@@ -1,0 +1,23 @@
+# Security headers + SPA routing for Apache (GoDaddy/cPanel).
+# Vite copies this file from public/ into dist/ on build; upload it with the rest of dist/.
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://flagcdn.com; media-src 'self' blob:; connect-src 'self' https://api.emailjs.com; frame-src https://alfalah-inbound.replit.app https://dib-inbound-calls.replit.app https://fibabanka-hr-screening.replit.app https://js-outbound-debt-collection--razaiqbal2.replit.app https://kepler-inbound-dashboard.replit.app https://mashreq-uae-outbound-portal-razaiqbal2.replit.app https://takeoff-inbound-caller.replit.app https://takeoff-live-avatar.replit.app https://takeoff-outbound-caller--razaiqbal2.replit.app https://trendyol-customer-support-calls.replit.app https://ubl-inbound-call.replit.app; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "microphone=(self \"https://alfalah-inbound.replit.app\" \"https://dib-inbound-calls.replit.app\" \"https://fibabanka-hr-screening.replit.app\" \"https://js-outbound-debt-collection--razaiqbal2.replit.app\" \"https://kepler-inbound-dashboard.replit.app\" \"https://mashreq-uae-outbound-portal-razaiqbal2.replit.app\" \"https://takeoff-inbound-caller.replit.app\" \"https://takeoff-live-avatar.replit.app\" \"https://takeoff-outbound-caller--razaiqbal2.replit.app\" \"https://trendyol-customer-support-calls.replit.app\" \"https://ubl-inbound-call.replit.app\"), camera=(self \"https://alfalah-inbound.replit.app\" \"https://dib-inbound-calls.replit.app\" \"https://fibabanka-hr-screening.replit.app\" \"https://js-outbound-debt-collection--razaiqbal2.replit.app\" \"https://kepler-inbound-dashboard.replit.app\" \"https://mashreq-uae-outbound-portal-razaiqbal2.replit.app\" \"https://takeoff-inbound-caller.replit.app\" \"https://takeoff-live-avatar.replit.app\" \"https://takeoff-outbound-caller--razaiqbal2.replit.app\" \"https://trendyol-customer-support-calls.replit.app\" \"https://ubl-inbound-call.replit.app\"), geolocation=(), payment=(), usb=()"
+</IfModule>
+
+# Force HTTPS (HSTS only takes effect over HTTPS)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # React Router: send unknown paths to index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
